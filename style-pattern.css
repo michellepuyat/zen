@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+h1,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  background: #aa0B14;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  font-family: "Ruthie", cursive;
+  color: #110E0C;
+  font-weight: 900;
+  /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: auto;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 1em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #110E0C;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #aa0B14;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: solid thin #110E0C;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header {
+  margin-bottom: 4em;
+}
+header h3 {
+  margin-left: 0.75em;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  border-top: 1px solid #aa0B14;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #fff;
+}
+
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #110E0C;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.intro {
+  padding: 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #302615;
+  padding: 5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85%;
+  color: #110E0C;
+  background-color: #ECE849;
+  margin: 0;
+  padding: 1em;
+}
+
+section {
+  background-color: white;
+  padding: 1em;
+  margin: 1em;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+}
+.colors > h3 {
+  width: 100%;
+  flex: 1 0 100%;
+}
+.colors > figure {
+  margin: 0;
+  flex: 1 1 25%;
+}
+
+.swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
+
+.primary {
+  background-color: #ECE849;
+}
+
+.accent1 {
+  background-color: #aa0B14;
+}
+
+.accent2 {
+  background-color: #256624;
+}
+
+.text-dark {
+  background-color: #110E0C;
+}
+
+.element {
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.uppercase {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #110E0C;
+}
+
+.uppercase-light {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.ruthie {
+  font-family: "Ruthie", cursive;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/*# sourceMappingURL=style-pattern.css.map */
