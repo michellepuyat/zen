@@ -18,13 +18,13 @@ header {
 }
 
 .summary {
-  @include atoms.uppercase($text-light);
+  @include atoms.uppercase($text-dark);
   padding: 15% 0;
   p:last-child {
     @include atoms.divider;
   }
   a {
-    color: $text-light; //in this case the link wants to be light instead of the default dark
+    color: $text-dark; //in this case the link wants to be light instead of the default dark
   }
 }
 .preamble {
