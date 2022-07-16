@@ -416,9 +416,9 @@ div .supporting [role=article] {
   background-size: 50%;
   position: fixed;
   display: flex;
+  font-size: 12px;
   flex-direction: column;
   justify-content: flex-start;
-  row-gap: 0.5em;
   align-items: center;
   overflow: hidden;
   transition: all 600ms ease;
@@ -447,8 +447,8 @@ div .supporting [role=article] {
     top: 5%;
     
     &:hover {
-      height: 70%;
-      width:50%;
+      height: 50%;
+      width:60%;
     }
   }
 
@@ -457,7 +457,7 @@ div .supporting [role=article] {
     top: 25%;
     
     &:hover {
-      height: 30%;
+      height: 20%;
       width:50%;
     }
   }
@@ -471,7 +471,7 @@ div .supporting [role=article] {
     }
     
     &:hover {
-      height: 35%;
+      height: 33%;
       width:50%;
     }
   }
@@ -485,8 +485,9 @@ div .supporting [role=article] {
       display: block;
     }
     nav, ul {
-      display: block;
-      gap: 1em;
+      display: flex;
+      flex-direction: column;
+      row-gap: .5em;
       margin: 0;
     }
   }
@@ -669,6 +670,7 @@ p {
       background-size: 50%;
       position: absolute;
       display: flex;
+      font-size: 15px;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -696,34 +698,43 @@ p {
     .sidebar .wrapper {
       .design-selection  {
         background-image: url("images/spear.png");
-        margin-top: -2.5em;
+        margin-top: -3em;
+
+        h3 {
+            margin-bottom: .5em;
+        }
 
         &:hover {
-          height: 20%;
-          width:50%;
+          height: 21%;
+          width:40%;
         }
       }
 
       .design-archives  {
         background-image: url("images/sibat.png");
-        margin-top: -11.5em;
+        margin-top: -16.4em;
+
+        h3 {
+           margin-bottom: .5em;
+        }
+
 
         &:hover {
-          height: 10%;
+          height: 8%;
           width:40%;
         }
       }
 
       .zen-resources  {
         background-image: url("images/hero.png");
-        margin-top: -20.5em;
+        margin-top: -30em;
 
         h3 {
-        margin-bottom: -0.05em;
+        margin-bottom: .5em;
         }
 
         &:hover {
-          height: 15%;
+          height: 16%;
           width:40%;
         }
       }
@@ -737,8 +748,9 @@ p {
           display: block;
         }
         nav, ul {
-          display: block;
-          gap: 1em;
+          display: flex;
+          flex-direction: column;
+          row-gap: .5em;
           margin: 0;
         }
       }
