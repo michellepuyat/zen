@@ -1,4 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+:root {
+//font
+    --body-font: 'Poppins', sans-serif;
+//color
+    --p-font-color: #ffffff;
+    --h-font-color: #382519;
+    --a-hover-color: #ba8563;
+    --div-b-color: #A49673;
+    --sw-color: #FBE164;
+    --div-hover-b-color: #6d7c3e;
+    --body-b-color: #b8c8cc;
+
+
+}
+
+
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -34,7 +51,7 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: var(--body-font);
 
   font-size: 1em;
 
@@ -61,7 +78,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: var(--body-font);
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -222,7 +239,7 @@ h2 {
 }
 
 h3 {
-  color: #382519;
+  color: var(--h3-font-color);
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -240,7 +257,8 @@ h3 {
 .benefits,
 .requirements,
 .zen-resources {
-  color: #ffffff;
+  color: var(--p-font-color);
+  margin-bottom: 1em;
 }
 
 h1,
@@ -248,28 +266,28 @@ h2,
 .summary,
 .benefits,
 .requirements {
-  background-color: #ffffff;
+  background-color: var(--p-font-color);
 }
 
 a{
   &:link {
-    color: #382519;
+    color: var(--h-font-color);
     font-weight: bold;
     text-decoration: none;
   }
 
   :visited {
-    color: #ffffff;
+    color: var(--p-font-color);
     font-weight: bold;
     text-decoration: none;
   }
 
   :hover {
-    color: #ba8563;
+    color: var(--a-hover-color);
   }
 
   :active {
-    color: #ffffff;
+    color: var(--p-font-color);
     font-weight: bold;
     text-decoration: none;
   }
@@ -285,7 +303,7 @@ li {
 }
 
 header {
-  background-color: #382519;
+  background-color: var(--h-font-color);
   background-image: url(images/filipino_girl.jpg);  
   background-repeat: no-repeat;
   background-size: 50% auto;
@@ -308,7 +326,7 @@ header {
   }
 
   h2 {
-    color: #ffffff;
+    color: var(--p-font-color);
     font-size: 70%;
     line-height: 1.2rem;
     width: 50%;
@@ -327,10 +345,10 @@ header {
     background-size: 370px 370px;
     background-position: right -180px bottom -150px;
     font-size: 0.8em;
-    background-color: #ffffff;
+    background-color: var(--p-font-color);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     margin: 0 auto 40px auto;
-    padding: 10px 25px 10px 25px;
+    padding: 20px 25px 10px 25px;
     transform: translateY(15px);
     width: 75%;
 
@@ -341,13 +359,13 @@ header {
   }
 
 .preamble {
-  background-color: #382519;
+  background-color: var(--h-font-color);
   background-image: url("images/ax.png");
   background-position: 10% 7%;
   background-repeat: no-repeat;
   background-size: 5%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: var(--p-font-color);
   margin: auto;
   padding: 5%;
   width: 85%;
@@ -371,7 +389,7 @@ header {
 
 
 div .supporting [role=article] {
-  background-color: #A49673;
+  background-color: var(--div-b-color);
   background-image: url("images/border.png");
   background-position: top center;
   background-repeat: repeat-x;
@@ -400,6 +418,7 @@ div .supporting [role=article] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  row-gap: 0.5em;
   align-items: center;
   overflow: hidden;
   transition: all 600ms ease;
@@ -409,10 +428,11 @@ div .supporting [role=article] {
   height: 10%;
   border-radius: 25px 0px 0px 25px;
 	right: 0; 
-  background-color: #FBE164;
+  background-color: var(--sw-color);
 
   h3 {
     width: 100%;
+    color: var(--p-font-color);
     text-align: center;
     display: none;
   }
@@ -424,17 +444,17 @@ div .supporting [role=article] {
 .sidebar .wrapper {
   .design-selection  {
     background-image: url("images/spear.png");
-    top: 10%;
+    top: 5%;
     
     &:hover {
-      height: 50%;
+      height: 70%;
       width:50%;
     }
   }
 
   .design-archives  {
     background-image: url("images/sibat.png");
-    top: 30%;
+    top: 25%;
     
     &:hover {
       height: 30%;
@@ -444,17 +464,21 @@ div .supporting [role=article] {
 
   .zen-resources  {
     background-image: url("images/hero.png");
-    top: 50%;
+    top: 45%;
+
+    h3 {
+    margin-bottom: -0.05em;
+    }
     
     &:hover {
-      height: 30%;
+      height: 35%;
       width:50%;
     }
   }
 
   div:hover {
     background-image: none;
-    background-color: #6d7c3e;
+    background-color: var(--div-hover-b-color);
     h3 {
       width: 100%;
       text-align: center;
@@ -462,6 +486,7 @@ div .supporting [role=article] {
     }
     nav, ul {
       display: block;
+      gap: 1em;
       margin: 0;
     }
   }
@@ -470,7 +495,7 @@ div .supporting [role=article] {
   /* FOOTER */
 
   footer {
-    background-color: #382519;
+    background-color: var(--h-font-color);
     bottom: -275px;
     display: flex;
     justify-content: center;
@@ -543,11 +568,11 @@ div .supporting [role=article] {
     }
   }
 
-  @media (min-width: 45em) {
+  /*@media (min-width: 45em) {
     footer {
       bottom: -265px;
     }
-  }
+  }*/
   
 
 /*keyframes*/
@@ -579,9 +604,9 @@ html {
 }
 
 body {
-  background: #b8c8cc;
-  color: #382519;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  background: var(--body-b-color);
+  color: var(--h-font-color);
+  font-family: var(--body-font);
   font-size: 16pt;
   line-height: 1.5rem;
   margin: 0;
@@ -596,4 +621,131 @@ p {
 .page-wrapper {
   margin: 0 0;
   position: relative;
+}
+@media screen and (min-width: 960px) {
+//For Laptops
+    #zen-supporting {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-areas: "explanation participation benefits"
+                             "requirements requirements requirements";
+
+        grid-template-columns: 401px 529px 351px;
+        grid-template-rows: 400px 200px;
+    }
+
+    #zen-explanation {
+        grid-area: explanation;
+        margin-left: 2.5em;
+        border-radius: 15px 50px;
+
+    }
+    #zen-participation {
+            grid-area: participation;
+            margin-right: -.5em;
+            border-radius: 50px;
+
+    }
+    #zen-benefits {
+        gird-area: benefits;
+        margin-right: -2em;
+        margin-top: -.1em;
+        border-radius: 50px 15px;
+
+
+    }
+
+    #zen-requirements {
+        grid-area: requirements;
+        margin-left: 8em;
+        margin-bottom: -42em;
+        margin-right: 3em;
+        border-radius: 50px;
+    }
+    .sidebar .wrapper div, .sidebar .wrapper div:not(:hover) {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      transition: all 600ms ease;
+      z-index: 20;
+      right: 0;
+      width: 8%;
+      height: 5%;
+      border-radius: 25px 0px 0px 25px;
+    	right: 0;
+      background-color: var(--sw-color);
+
+      h3 {
+        width: 100%;
+        color: var(--p-font-color);
+        text-align: center;
+        display: none;
+      }
+      nav, ul {
+        display: none;
+      }
+    }
+
+    .sidebar .wrapper {
+      .design-selection  {
+        background-image: url("images/spear.png");
+        margin-top: -2.5em;
+
+        &:hover {
+          height: 20%;
+          width:50%;
+        }
+      }
+
+      .design-archives  {
+        background-image: url("images/sibat.png");
+        margin-top: -11.5em;
+
+        &:hover {
+          height: 10%;
+          width:40%;
+        }
+      }
+
+      .zen-resources  {
+        background-image: url("images/hero.png");
+        margin-top: -20.5em;
+
+        h3 {
+        margin-bottom: -0.05em;
+        }
+
+        &:hover {
+          height: 15%;
+          width:40%;
+        }
+      }
+
+      div:hover {
+        background-image: none;
+        background-color: var(--div-hover-b-color);
+        h3 {
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+        nav, ul {
+          display: block;
+          gap: 1em;
+          margin: 0;
+        }
+      }
+    }
+
+    footer {
+    margin-bottom: -30em;
+    }
+
 }
